@@ -1,0 +1,39 @@
+ body{
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                        'header header header header'
+                        'section section section batata'
+                        'footer footer footer footer';
+grid-template-rows: 5vh 400px 60vh 15vh; 
+grid-template-columns: 25vw 25vw 20vw 30vw;
+/*grid-gap: 1vh - para colocar espaçamento*/
+margin: 0%;
+font-family: 'Marvel', sans-serif;
+font-style: unset;
+font-size: 25px;
+}
+nav{
+    grid-area: navbar;
+    background-color:#F21B2D;
+    
+}
+header{
+    grid-area: header;
+    background-color: violet;
+    background-image:url(images/avengers.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0%;
+}
+section{
+    grid-area: section; 
+    background-color:purple;
+}
+aside{
+    grid-area: batata;
+    background-color: coral;
+}
+footer{
+    grid-area: footer;
+    background-color:olive;
+}
